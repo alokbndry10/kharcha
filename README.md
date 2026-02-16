@@ -3,7 +3,7 @@
 Kharcha is a modern, high-performance web application designed to streamline accounting and expense tracking. Built with focus on efficiency and scalability, it provides a comprehensive suite of tools for managing vendors, items, and day-to-day business expenses.
 
 > [!NOTE]
-> This project was **Developed by Aalok Bhandari**.
+> This project was **Developed by Aalok Bhandari, Bidhan Thapaliya, Sidddhant Thapaliya**.
 
 ## Key Features
 
