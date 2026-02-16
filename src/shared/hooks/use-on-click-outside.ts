@@ -1,0 +1,39 @@
+import type { RefObject } from 'react';
+import { useEventListener } from './use-event-listener';
+
+type EventType = 'mousedown' | 'mouseup' | 'touchstart' | 'touchend' | 'focusin' | 'focusout';
+
+export function useOnClickOutside(
+  ref: RefObject<HTMLElement | null> | RefObject<HTMLElement>[],
+  handler: (event: MouseEvent | TouchEvent | FocusEvent) => void,
+  eventType: EventType = 'mousedown',
+  eventListenerOptions: AddEventListenerOptions = {}
+): void {
+  useEventListener(
+    eventType,
+    (event) => {
+      const target = event.target as Node;
+
+      if (!target || !target.isConnected) {
+        return;
+      }
+
+      const isAntModal = (target as Element).closest?.(
+        '.invite-member-modal, .add-team-submenu, .prevent-click-outside'
+      );
+
+      if (isAntModal) {
+        return;
+      }
+      const isOutside = Array.isArray(ref)
+        ? ref.filter((r) => Boolean(r.current)).every((r) => r.current && !r.current.contains(target))
+        : ref.current && !ref.current.contains(target);
+
+      if (isOutside) {
+        handler(event);
+      }
+    },
+    undefined,
+    eventListenerOptions
+  );
+}

@@ -1,0 +1,46 @@
+.app-alert.ant-alert {
+  border: none;
+  border-radius: 0px;
+  color: var(--color-text-600);
+  justify-content: center;
+}
+
+.app-alert .ant-alert-content {
+  flex: initial;
+}
+
+.app-alert.ant-alert-success {
+  background-color: var(--color-emerald-50);
+}
+
+.app-alert.ant-alert-success a {
+  color: var(--color-green-700);
+}
+
+.app-alert.ant-alert-info {
+  background-color: var(--color-primary-50);
+}
+
+.app-alert.ant-alert-info a {
+  color: var(--color-primary-500);
+}
+
+.app-alert.ant-alert-warning {
+  background-color: var(--color-amber-50);
+}
+
+.app-alert.ant-alert-warning a {
+  color: var(--color-amber-700);
+}
+
+.app-alert.ant-alert-error {
+  background-color: var(--color-red-50);
+}
+
+.app-alert.ant-alert-error a {
+  color: var(--color-red-700);
+}
+
+.app-alert .ant-alert-icon {
+  flex-shrink: 0;
+}

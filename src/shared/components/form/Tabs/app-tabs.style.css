@@ -1,0 +1,7 @@
+.appTabs .ant-tabs-nav {
+  margin-bottom: 0;
+}
+
+.appTabs .ant-tabs-nav .ant-tabs-ink-bar {
+  height: 3px;
+}
