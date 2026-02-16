@@ -67,4 +67,4 @@ npm run build
 
 ## GitHub Repository Description
 *Copy and paste this into your GitHub repository settings:*
-> Kharcha: A modern, full-stack expense management and accounting application built with React, Vite, Supabase, and Ant Design. Developed by Aalok Bhandari.
+> Kharcha: A modern, full-stack expense management and accounting application built with React, Vite, Supabase, and Ant Design. Developed by Aalok Bhandari , Bidhan Thapaliya , Siddhant Shrestha
